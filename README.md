@@ -31,10 +31,10 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 ### Instructions
 
 - [X] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [X] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [X] Run `npm start` to compile the project and serve it.
+- [X] Navigate Chrome to `http://localhost:3000`
+- [X] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
@@ -53,19 +53,35 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes.
-- [ ] Create a pull request to merge `<firstName-lastName>` branch into `main`.
-- [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [X] Submit via Codegrade by committing and pushing any new changes.
+- [X] Create a pull request to merge `<firstName-lastName>` branch into `main`.
+- [X] Please don't merge your own pull request and make sure **you are on your own repo**.
+- [X] Check Codegrade for automated feedback.
+- [X] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [X] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+
+DOM is an acronym for 'Document Object Model'. The DOM is the data representation of the objects that make up the structure and content of a document on the web. The DOM is NOT a programming language. The DOM is a programming interface for HTML (HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser) and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects so that programming languages can connect to the page.
+
 2. What is an event?
+
+Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if you want to. For example, if a user clicks on a button, you might want to redirect their browser to the corresponding web page.
+
 3. What is an event listener?
+
+Each available event has an event listener and and event handler. An event listener listens out for the event happening. An event handler is a block of code (usually a JavaScript function that the programmer creates) that runs when the event fires. The event handler is the code that runs in response to the event happening.
+
 4. Why would we convert a NodeList into an Array?
+
+NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll(), which is what we have been using.
+There are 2 varieties of NodeList: live and static. When the NodeList is live, changes in the DOM automatically update the collection. When the NodeList is static, any changes in the DOM do not affect the content of the collection. document.querySelectorAll() method returns a static NodeList.
+The latest JavaScript ES6 release brought helpful methods for working with arrays: Array.forEach(), Array.every(), Array.filter(), etc. Unfortunately, when you use querySelectorAll() method it returns a NodeList instead of an array. You cannot use any of the helpful array methods on the NodeList. You would want to convert a NodeList into an array so that you could utilize the helpful array methods.
+
 5. What is a component?
+
+A component brings together markup, logic, and style in an encapsulated and reusable form. The idea behind components is to build functions that take data as arguments and return HTML elements. Generally speaking in the programming field of study, a component is an identifiable part of a larger program or construction.
