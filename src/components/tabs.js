@@ -1,4 +1,5 @@
-const Tabs = (topics) => {
+const Tabs = (topics) => 
+{
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
@@ -15,7 +16,8 @@ const Tabs = (topics) => {
   //
 }
 
-const tabsAppender = (selector) => {
+const tabsAppender = (selector) => 
+{
   // TASK 4
   // ---------------------
   // Implement this function which takes a css selector as its only argument.
